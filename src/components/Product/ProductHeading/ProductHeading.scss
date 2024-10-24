@@ -1,0 +1,20 @@
+@use "../../../styles/variables";
+@use "../../../styles/helpers";
+
+.product-heading {
+  margin: 0 0 helpers.vr(8);
+
+  @media (min-width: variables.$media-md) {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+  }
+
+  &__title {
+    font-size: 28px;
+    margin: 0;
+  }
+
+    &__price {
+        margin: helpers.vr(4) 0 0;
+    }
+}

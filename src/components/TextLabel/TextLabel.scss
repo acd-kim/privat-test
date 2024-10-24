@@ -1,0 +1,6 @@
+@use "../../styles/variables";
+@use "../../styles/helpers";
+
+.text-label {
+  margin: 0 0 helpers.vr(1);
+}

@@ -1,0 +1,8 @@
+@use "../../styles/variables";
+@use "../../styles/helpers";
+
+.text-field {
+  padding: helpers.vr(2) helpers.vr(4);
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$border-radius;
+}

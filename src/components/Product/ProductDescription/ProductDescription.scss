@@ -1,0 +1,31 @@
+@use "../../../styles/variables";
+@use "../../../styles/helpers";
+
+.product-description {
+  font-size: 18px;
+
+  &__text {
+    margin: 0 0 helpers.vr(8);
+  }
+}
+
+.product-description-list {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  font-size: 16px;
+  margin: helpers.vr(8) 0 0;
+
+  &__prop,
+  &__value {
+    margin: 0 0 helpers.vr(3);
+  }
+
+  &__prop {
+    text-decoration: underline;
+  }
+
+  &__value {
+    font-weight: 500;
+  }
+}
+

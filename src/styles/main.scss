@@ -1,0 +1,68 @@
+@use "variables";
+@use "helpers";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  cursor: pointer;
+  font-weight: 400;
+  color: variables.$link-color;
+  text-decoration: inherit;
+  text-underline-offset: 4px;
+
+  &:hover {
+    color: inherit;
+    text-decoration-line: underline;
+  }
+
+  &.a_default {
+    text-decoration-line: none;
+    color: inherit;
+  }
+
+  &.a_default-color {
+    color: inherit;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  a:hover {
+    color: inherit;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: variables.$main-background-color;
+  color: variables.$text-color;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+// Layout
+.page {
+  min-height: 100vh;
+  padding: variables.$header-height 0 0;
+}
+
+.page-container {
+  max-width: 1000px;
+  padding: 0 helpers.vr(6);
+  margin: 0 auto;
+}

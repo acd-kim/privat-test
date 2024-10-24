@@ -1,0 +1,8 @@
+@use "../../styles/variables";
+@use "../../styles/helpers";
+
+.form-group {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0 0 helpers.vr(6);
+}

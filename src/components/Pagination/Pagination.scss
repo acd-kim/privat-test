@@ -1,0 +1,46 @@
+@use "../../styles/variables";
+@use "../../styles/helpers";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: helpers.vr(8) 0;
+
+  &__list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+  &__btn,
+  &__btn-nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: helpers.vr(4);
+    height: 2.5em;
+    background: transparent;
+    padding: 0 helpers.vr(2);
+    border: none;
+    margin: helpers.vr(1);
+    border-radius: variables.$border-radius;
+    transition: all 0.2s;
+
+    &_selected {
+      background: variables.$color-dark;
+      color: variables.$color-white;
+      border: 1px solid variables.$color-dark;
+    }
+
+    &:disabled {
+      cursor: default;
+    }
+  }
+
+  &__btn {
+    width: 2.5em;
+  }
+}

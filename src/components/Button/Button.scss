@@ -1,0 +1,26 @@
+@use "../../styles/variables";
+@use "../../styles/helpers";
+
+.button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: helpers.vr(3) helpers.vr(4);
+  background: variables.$color-dark;
+  color: variables.$color-white;
+  border-radius: variables.$border-radius;
+  border: none;
+  transition: all 0.2s;
+
+  &_full-width {
+    width: 100%;
+  }
+
+  &:hover {
+    background: rgba(variables.$color-dark, 0.8);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}

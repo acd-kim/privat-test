@@ -1,0 +1,5 @@
+@use "variables";
+
+@function vr($n) {
+  @return $n * variables.$base-vr-size;
+}

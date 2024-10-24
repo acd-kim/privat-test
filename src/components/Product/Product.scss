@@ -1,0 +1,12 @@
+@use "../../styles/variables";
+@use "../../styles/helpers";
+
+.product {
+  display: grid;
+  margin: helpers.vr(14) 0 helpers.vr(6);
+
+  @media (min-width: variables.$media-md) {
+    grid-template-columns: calc(55% - #{helpers.vr(3)}) calc(45% - #{helpers.vr(3)});
+    grid-column-gap: helpers.vr(6);
+  }
+}

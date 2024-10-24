@@ -1,0 +1,40 @@
+@use "../../styles/variables";
+@use "../../styles/helpers";
+
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: variables.$header-height;
+  border-bottom: 1px solid variables.$border-color;
+  z-index: variables.$z-index-header;
+  padding: helpers.vr(4);
+  box-sizing: border-box;
+  display: flex;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.main-nav {
+  margin: 0 16px 0;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    padding: 4px 8px;
+  }
+}

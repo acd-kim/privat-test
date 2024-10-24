@@ -1,0 +1,11 @@
+@use "../../styles/helpers";
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: helpers.vr(8) 0;
+
+  .text-field {
+    min-width: 320px;
+  }
+}
